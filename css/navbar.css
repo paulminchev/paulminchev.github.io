@@ -1,0 +1,35 @@
+        .background {
+            background-color: #30302f;
+        }    
+        .navbar {
+            background-color:black;
+            overflow:hidden;
+            padding:0px;
+        }
+        .navbar li:hover {
+            background-color:red;
+        }
+        .navbar a {
+            color: white;
+            font-size: 24px;
+            padding: 16px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .navbar li {
+            list-style-type: none;
+            float: left;
+        }
+        .dropdown-content li {
+            float: none;
+
+        }
+        .dropdown:hover .dropdown-content {
+            display:block;
+        }
+        .dropdown-content {
+            padding: 0px;
+            background-color: black;
+            display: none;
+            position: absolute;
+        }
