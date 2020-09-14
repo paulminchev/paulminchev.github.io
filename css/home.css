@@ -1,0 +1,23 @@
+.title {
+    color: #b31bb5;
+    font-family: Helvetica;
+    text-align: center;
+}
+.table {
+    border: 0px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+.tabletext {
+    text-align: center;
+    color: white;
+    font-family: Helvetica
+}
+p {
+    font-size: 20px;
+}
+.image {
+    width: 200px;
+    height: 200px;
+    align: center;
+}

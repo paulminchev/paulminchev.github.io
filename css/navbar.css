@@ -2,13 +2,13 @@
             background-color: #30302f;
         }    
         .navbar {
-            background-color:#942323;
+            background-color:#b31bb5;
             overflow:hidden;
             padding:0px;
         }
         .navbar li:hover {
             background: rgb(0,0,0);
-            background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(80,19,19,1) 1%, rgba(148,35,35,1) 50%);
+            background: radial-gradient(circle, rgba(47,42,42,1) 0%, rgba(179,27,181,1) 50%);
         }
         .navbar a {
             color: white;
@@ -30,11 +30,11 @@
         }
         .dropdown-content {
             padding: 0px;
-            background-color:#942323;
+            background-color:#b31bb5;
             display: none;
             position: absolute;
         }
         .navbar .active {
             background: rgb(0,0,0);
-            background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(80,19,19,1) 1%, rgba(148,35,35,1) 50%);
+            background: radial-gradient(circle, rgba(47,42,42,1) 0%, rgba(179,27,181,1) 50%);
         }
