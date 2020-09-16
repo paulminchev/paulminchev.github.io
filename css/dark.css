@@ -1,31 +1,6 @@
-        .header {
-            font-size:40px;
-            font-family: Helvetica;
-            text-align: left;
-        }
-        .whitetext {
-            color:white;
-            font-size:20px;
-        }
-        .redtext {
-            color:red;
-        }
-        .lightbluetext {
-            color:lightblue;
-        }
-        .orangetext {
-            color: orange;
-        }
-        .orangetable {
-            background-color:#f28b37;
-        }
-        .tabletext {
-            text-align: center;
-            color: white
-        }
-        .bluetable {
-            background-color: #2bb5a0;
-        }
-        .background {
-            background-color: #30302f;
-        }
+.aboutme {
+    color: white;
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 12px;
+}
