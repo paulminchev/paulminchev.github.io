@@ -1,21 +1,22 @@
 .resumetext {
     color: white;
     font-family: Helvetica;
-    text-align: center;
+    text-align: left;
     font-size: 12px;
 }
 .resumeheader {
     color: white;
     font-family: Helvetica;
-    text-align: center;
+    text-align: left;
     font-size: 25px;
 }
 .smallerheader {
     color: white;
     font-family: Helvetica;
-    text-align: center;
-    font-size: 25px;
+    text-align: left;
+    font-size: 20px;
 }
-li {
-    list-style-type: none;
+.instalink {
+    color: white;
+    font-family: Helvetica;
 }

@@ -38,3 +38,9 @@
             background: rgb(0,0,0);
             background: radial-gradient(circle, rgba(47,42,42,1) 0%, rgba(179,27,181,1) 50%);
         }
+        .titletext {
+            font-size: 30px;
+            text-align: center;
+            font-family: Helvetica;
+            color: white;
+        }
