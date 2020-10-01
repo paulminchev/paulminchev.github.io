@@ -17,6 +17,9 @@
                 width: 50%;
                 background-color: green;
                 float: left;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             #right_pane {
                 height: 100%;
@@ -27,6 +30,29 @@
             #story_text {
                 height: 80%;
                 background-color: yellow;
+                color: red;
+                font-weight: bold;
+                
+            }
+            #button_choices {
+                background-color: pink;
+                height: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #story_img {
+                max-height: 100%;
+                max-width: 100%;
+            }
+            .buttons {
+                text-decoration: none;
+                color: white;
+                background-color: black;
+                padding: 10px;
+                border-radius: 8px;
+                font-size: 25px;
+                margin: 10px;
             }
         </style>
 </head>
@@ -65,11 +91,20 @@
             </li>
         </ul>
         <div id="container">
-            <div id="left_pane"></div>
-            <div id="right_pane"></div>
-                <div id="story_text"></div>
-                <div id="button_text"></div>
-
+            <div id="left_pane">
+                <img id ="story_img" src="images/watercat.gif">
+            </div>
+            <div id="right_pane">
+                <div id="story_text">
+                    <p>Welcome To The Ice Cream Shoppe</p>
+                    <p>It is the year 2020</p>
+                    <p>Do you want to Joe?</p>
+                </div>
+                <div id="button_choices">
+                    <a class="buttons" href="">Yes</a>
+                    <a class="buttons" href="">No</a>
+                </div>
+            </div>
         </div>
     </body>
     </html>
