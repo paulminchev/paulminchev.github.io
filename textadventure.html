@@ -101,7 +101,7 @@
                     <p id="p3">Do you want to Joe?</p>
                 </div>
                 <div id="button_choices">
-                    <a id="b1" class="buttons" href="" onclick="bclick(1)">Yes</a>
+                    <a id="b1" class="buttons" href="" onclick="bclick(1)">Choice1</a>
                     <a id="b2" class="buttons" href="" onclick="bclick(2)">No</a>
                     <a id="b3" class="buttons" href="" onclick="bclick(3)">Yes</a>
                     <a id="b4" class="buttons" href="" onclick="bclick(4)">No</a>
@@ -127,6 +127,26 @@
                 b3.style.display = "none";
                 b4.style.display = "none";
                 p1.innerHTML = "Yea";
+            }
+
+            function stayInSchool(){
+                img.src="images/littlerpaul.jpg"
+                p1.innerHTML = "Yes";
+            }
+
+            //////State Machine
+            function bclick(button){
+                if (state == "intro"){
+                    if (button == 1){
+                        stayInSchool();
+                        state="stayInSchool";
+                    }
+                    else if (button == 2){
+                        goToCamp();
+                        state="goToCamp";
+                    }
+                }
+
             }
         </script>
     </body>
