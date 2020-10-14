@@ -33,6 +33,7 @@
             background-color:#b31bb5;
             display: none;
             position: absolute;
+            z-index: 1;
         }
         .navbar .active {
             background: rgb(0,0,0);

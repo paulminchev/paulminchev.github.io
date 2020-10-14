@@ -10,12 +10,10 @@
                 right: 8px;
                 top: 95px;
                 bottom: 0px;
-                background-color: red;
             }
             #left_pane {
                 height: 100%;
                 width: 50%;
-                background-color: green;
                 float: left;
                 display: flex;
                 align-items: center;
@@ -24,18 +22,16 @@
             #right_pane {
                 height: 100%;
                 width: 50%;
-                background-color: blue;
                 float: left;
             }
             #story_text {
                 height: 80%;
-                background-color: yellow;
-                color: red;
+                color: white;
                 font-weight: bold;
+                font-size: 20px;
                 
             }
             #button_choices {
-                background-color: pink;
                 height: 20%;
                 display: flex;
                 align-items: center;
@@ -43,7 +39,8 @@
             }
             #story_img {
                 max-height: 100%;
-                max-width: 100%;
+                max-width: 95%;
+                padding: 10px;
             }
             .buttons {
                 text-decoration: none;
@@ -96,15 +93,15 @@
             </div>
             <div id="right_pane">
                 <div id="story_text">
-                    <p id="p1">Welcome To The Ice Cream Shoppe</p>
-                    <p id="p2">It is the year 2020</p>
-                    <p id="p3">Do you want to Joe?</p>
+                    <p id="p1">1</p>
+                    <p id="p2">2</p>
+                    <p id="p3">3</p>
                 </div>
                 <div id="button_choices">
-                    <a id="b1" class="buttons" href="" onclick="bclick(1)">Choice1</a>
-                    <a id="b2" class="buttons" href="" onclick="bclick(2)">No</a>
-                    <a id="b3" class="buttons" href="" onclick="bclick(3)">Yes</a>
-                    <a id="b4" class="buttons" href="" onclick="bclick(4)">No</a>
+                    <a id="b1" class="buttons" href="#" onclick="bclick(1)">Choice1</a>
+                    <a id="b2" class="buttons" href="#" onclick="bclick(2)">No</a>
+                    <a id="b3" class="buttons" href="#" onclick="bclick(3)">Yes</a>
+                    <a id="b4" class="buttons" href="#" onclick="bclick(4)">No</a>
                 </div>
             </div>
         </div>
@@ -121,32 +118,53 @@
             intro ();
 
             function intro (){
-                img.src = "images/watercat.gif";
-                b1.innerHTML = "Choice1";
-                b2.innerHTML = "Choice2";
+                img.src = "images/door.jpg";
+                b1.innerHTML = "Enter";
+                b2.style.display = "none";
                 b3.style.display = "none";
                 b4.style.display = "none";
-                p1.innerHTML = "Yea";
+                p1.innerHTML = "One day, Joe comes home from work and finds his door open.";
+                p2.innerHTML = "He has no idea what has happened but decides to investigate."
+                p3.innerHTML = "Is his Momma safe?"
             }
 
-            function stayInSchool(){
-                img.src="images/littlerpaul.jpg"
-                p1.innerHTML = "Yes";
+            function enter(){
+                img.src="images/uglyroom.jpg"
+                p1.innerHTML = "He enters to find that nothing has been put out of place.";
+                p2.innerHTML = "Where is Momma though? Joe begins to worry as she is nowhere to be seen, and starts thinking of ideas."
+                p3.innerHTML = "Should Joe go to the police station to ask where Momma is or figure it out himself?"
+                b1.innerHTML = "Visit The Station"
+                b2.innerHTML = "Investigate Himself"
+                b2.style.display = "block";
+            }
+            function policeStation(){
+                img.src="images/joe.jpg"
+                p1.innerHTML = "Joe enters the police station and heads towards the front desk, where he speaks to an officer."
+                p2.innerHTML = "The officer tells him that a fat woman in her fifties was spotted speeding out of town, but that's all he knows."
+                p3.innerHTML = "Unable to get any other information, Joe returns back to his house in despair."
+            }
+            function investigate(){
+                img.src=""
             }
 
             //////State Machine
             function bclick(button){
                 if (state == "intro"){
                     if (button == 1){
-                        stayInSchool();
-                        state="stayInSchool";
-                    }
-                    else if (button == 2){
-                        goToCamp();
-                        state="goToCamp";
+                        enter();
+                        state="enter";
                     }
                 }
-
+                else if (state == "enter"){
+                    if (button == 1){
+                        policeStation();
+                        state="policeStation";
+                    }
+                    else if (button == 2){
+                        investigate();
+                        state="investigate";
+                    }
+                }
             }
         </script>
     </body>
