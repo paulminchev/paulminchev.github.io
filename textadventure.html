@@ -125,11 +125,11 @@
                 b4.style.display = "none";
                 p1.innerHTML = "One day, Joe comes home from work and finds his door open.";
                 p2.innerHTML = "He has no idea what has happened but decides to investigate."
-                p3.innerHTML = "Is his Momma safe?"
+                p3.innerHTML = "Is his Momma safe?";
             }
 
             function enter(){
-                img.src="images/uglyroom.jpg"
+                img.src="images/uglyroom.jpg";
                 p1.innerHTML = "He enters to find that nothing has been put out of place.";
                 p2.innerHTML = "Where is Momma though? Joe begins to worry as she is nowhere to be seen, and starts thinking of ideas."
                 p3.innerHTML = "Should Joe go to the police station to ask where Momma is or figure it out himself?"
@@ -138,13 +138,37 @@
                 b2.style.display = "block";
             }
             function policeStation(){
-                img.src="images/joe.jpg"
-                p1.innerHTML = "Joe enters the police station and heads towards the front desk, where he speaks to an officer."
-                p2.innerHTML = "The officer tells him that a fat woman in her fifties was spotted speeding out of town, but that's all he knows."
-                p3.innerHTML = "Unable to get any other information, Joe returns back to his house in despair."
+                img.src="images/joe.jpg";
+                p1.innerHTML = "Joe enters the police station and heads towards the front desk, where he speaks to an officer.";
+                p2.innerHTML = "The officer tells him that a fat woman in her fifties was spotted speeding out of town, but that's all he knows.";
+                p3.innerHTML = "Unable to get any other information, Joe decides to return back to his house in despair.";
+                b1.innerHTML = "Return Home";
+                b2.style.display = "none";
             }
             function investigate(){
-                img.src=""
+                img.src="images/note.jpg";
+                p1.innerHTML = "Joe looks around the apartment for any clues he can find.";
+                p2.innerHTML = "After a while, he notices that there is a sticky note is on the wall. It reads \"Your phone will ring at exactly 4:34 P.M. Make sure you answer.\"";
+                p3.innerHTML = "Joe checks the time and sees it is 4:33 P.M. He sits down and waits for a few seconds. That's when the phone rings.";
+                b1.innerHTML = "Pick Up";
+                b2.style.display = "none";
+            }
+            function backHome(){
+                img.src="images/phone.jpg";
+                p1.innerHTML = "As Joe is walking back home, he gets a phone call.";
+                p2.innerHTML = "The caller is unknown, and it can't be a scheduled call, as it is 4:34 P.M, not some ordinary scheduled time.";
+                p3.innerHTML = "Will Joe pick up the phone?";
+                b1.innerHTML = "Yes";
+                b2.innerHTML = "No";
+                b2.style.display = "block";
+            }
+            function pickUp(){
+                img.src="images/phone.jpg"
+                p1.innerHTML = "fill"
+                b1.innerHTML = "Go"
+            }
+            function hangUp(){
+                
             }
 
             //////State Machine
@@ -163,6 +187,22 @@
                     else if (button == 2){
                         investigate();
                         state="investigate";
+                    }
+                }
+                else if (state == "policeStation"){
+                    if (button == 1){
+                        backHome();
+                        state="backHome";
+                    }
+                }
+                else if (state == "backHome"){
+                    if (button == 1){
+                        pickUp();
+                        state="pickUp";
+                    }
+                    if (button == 2){
+                        hangUp();
+                        state="hangUp"
                     }
                 }
             }
