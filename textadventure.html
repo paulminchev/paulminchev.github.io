@@ -163,12 +163,28 @@
                 b2.style.display = "block";
             }
             function pickUp(){
-                img.src="images/phone.jpg"
-                p1.innerHTML = "fill"
-                b1.innerHTML = "Go"
+                img.src="images/mikewave.png"
+                p1.innerHTML = "The call picks up and you hear someone clear their throat."
+                p2.innerHTML = "A voice begins speaking and introduces itself as \"Mike\". Mike says that he works for Hawk Detective Industries and was set on a secret case about Momma. He states that he can't explain any more, but that Joe must drive to New Orleans and help the case."
+                p3.innerHTML = "Joe is desperate to find his Momma, so he agrees. He gets into his car and begins the long journey."
+                b1.innerHTML = "Drive To New Orleans"
+                b2.style.display = "none";
             }
             function hangUp(){
-                
+                img.src="images/hangup.jpg"
+                p1.innerHTML = "Joe thinks nothing of the call and hangs up."
+                p2.innerHTML = "He continues on his  way back home and is lost on what to do. He sends out a missing person report and does all he can."
+                p3.innerHTML = "However, Momma is never found."
+                b1.innerHTML = "Start Over"
+                b2.style.display = "none";
+            }
+            function drive(){
+                img.src="images/mike.jpg";
+                p1.innerHTML = "After a long, long drive from Santa Cruz to New Orleans, Joe finally arrives at Hawk Detective Industries."
+                p2.innerHTML = "He sees a mysterious man leaning on the wall right outside, appearing to be waiting for him. As Joe approaches him, the man reveals he is Mike, the one who called him over the phone."
+                p3.innerHTML = "Mike invites Joe inside so they can better discuss what's happened and where to go from here."
+                b1.innerHTML = "Go Inside"
+                b2.style.display = "none";
             }
 
             //////State Machine
@@ -189,6 +205,12 @@
                         state="investigate";
                     }
                 }
+                else if (state == "investigate"){
+                    if (button == 1){
+                        pickUp();
+                        state="pickUp";
+                    }
+                }
                 else if (state == "policeStation"){
                     if (button == 1){
                         backHome();
@@ -203,6 +225,18 @@
                     if (button == 2){
                         hangUp();
                         state="hangUp"
+                    }
+                }
+                else if (state == "hangUp"){
+                    if (button == 1){
+                        intro();
+                        state="intro";
+                    }
+                }
+                else if (state == "pickUp"){
+                    if (button == 1){
+                        drive();
+                        state="drive";
                     }
                 }
             }
