@@ -173,7 +173,7 @@
             function hangUp(){
                 img.src="images/hangup.jpg"
                 p1.innerHTML = "Joe thinks nothing of the call and hangs up."
-                p2.innerHTML = "He continues on his  way back home and is lost on what to do. He sends out a missing person report and does all he can."
+                p2.innerHTML = "He continues on his way back home and is lost on what to do. He sends out a missing person report and does all he can."
                 p3.innerHTML = "However, Momma is never found."
                 b1.innerHTML = "Start Over"
                 b2.style.display = "none";
@@ -185,6 +185,128 @@
                 p3.innerHTML = "Mike invites Joe inside so they can better discuss what's happened and where to go from here."
                 b1.innerHTML = "Go Inside"
                 b2.style.display = "none";
+            }
+            function goInside(){
+                img.src="images/mikedesk.jpg";
+                p1.innerHTML = "Mike invites Joe to sit down in the seat next to his desk and lays out some reports."
+                p2.innerHTML = "He explains that there have been many reports of Momma sightings, and has singled it out to three locations she could be at. First, she could be at Yurso Dumm's European Restaurant, as she is known to eat a lot, and was spotted near there. Another report spotted her near a back alley, barely squeezing through. Finally, Mike explains that he has a hunch that she might be at Home Depot... For some reason."
+                p3.innerHTML = "Where will you choose to go?"
+                b1.innerHTML = "Yurso Dumm's European Restaurant"
+                b2.innerHTML = "The Alleyway"
+                b3.innerHTML = "Home Depot"
+                b2.style.display = "block";
+                b3.style.display = "block";
+            }
+            function goInsideTwo(){
+                img.src="images/mikedesk.jpg";
+                p1.innerHTML = "Mike invites Joe to sit down in the seat next to his desk and lays out some reports."
+                p2.innerHTML = "He explains that there have been many reports of Momma sightings, and has singled it out to three locations she could be at. It won't be Yurso Dumm's restaurant, as they already attempted to find her there. One report spotted her near a back alley, barely squeezing through. Mike also explains that he has a hunch that she might be at Home Depot... For some reason."
+                p3.innerHTML = "Where will you choose to go?"
+                b1.innerHTML = "The Alleyway"
+                b2.innerHTML = "Home Depot"
+                b2.style.display = "block";
+            }
+            function europeanRestaurant(){
+                img.src="images/yurso.jpg";
+                p1.innerHTML = "Joe and Mike enter the restaurant and go to the counter to call for Yurso."
+                p2.innerHTML = "After a few minutes, he walks up, and just stares. They attempt to explain the situation to him, but the only thing he can say is \"Ja, I am Bladee!\""
+                p3.innerHTML = "It seems that this path won't help them find Momma."
+                b1.innerHTML = "Return Back To Hawk Detective Industries"
+                b2.style.display = "none";
+                b3.style.display = "none";
+            }
+            function alleyway(){
+                img.src="images/warehousebackdoor.jpg";
+                p1.innerHTML = "Joe and Mike arrive at the alleyway where Momma was spotted."
+                p2.innerHTML = "They steadily walk on for some time. Finally, they arrive at the end of the alleyway into what looks like a backlot. There it turns out, was a Home Depot warehouse... It was just like Mike had suspected."
+                p3.innerHTML = "They both know this is the right place, and so they decide to enter the warehouse."
+                b1.innerHTML = "Enter The Warehouse"
+                b2.style.display = "none";
+                b3.style.display = "none";
+            }
+            function homeDepot(){
+                img.src="images/homedepot.jpg";
+                p1.innerHTML = "Joe and Mike pull up to Home Depot and enter through the front door."
+                p2.innerHTML = "They ask about Momma and all the employees know is that a fat woman entered through the front a bit ago but never exited."
+                p3.innerHTML = "All they can do to help is let Joe and Mike into the warehouse through the back. "
+                b1.innerHTML = "Go To The Warehouse"
+                b2.style.display = "none";
+                b3.style.display = "none";
+            }
+            function warehouseChoiceOne(){
+                img.src="images/warehouse.jpg";
+                p1.innerHTML = "As they enter, Joe and Mike notice that the warehouse is gigantic."
+                p2.innerHTML = "\"There's no sure way to know where Momma's at.\" states Mike. He suggests they look through different sections to find her. "
+                p3.innerHTML = "What section will they look through first?"
+                b1.innerHTML = "The Furniture Section"
+                b2.innerHTML = "The Garden Section"
+                b2.style.display = "block";
+                b3.style.display = "none";
+            }
+            function garden(){
+                img.src="images/garden.jpg";
+                p1.innerHTML = "Joe and Mike explore the garden, but sadly find nothing at all."
+                p2.innerHTML = "They pick up a shovel just in case they need it, but that's about it."
+                p3.innerHTML = "They decide to return back and search the other section of the warehouse."
+                b1.innerHTML = "Return Back To The Warehouse Entrance"
+                b2.style.display = "none";
+            }
+            function furniture(){
+                img.src="images/toilet.jpg";
+                p1.innerHTML = "Joe and Mike explore for a while. Nothing of interest happens at all."
+                p2.innerHTML = "Then they reach the toilet aisle. As they're walking through, the toilets begin quickly flooding the floor."
+                p3.innerHTML = "They must act quickly and climb up onto the rafters to avoid drowning."
+                b1.innerHTML = "Climb Up"
+                b2.style.display = "none";
+            }
+            function warehouseChoiceTwo(){
+                img.src="images/oliver.jpg";
+                p1.innerHTML = "As Joe and Mike finally lift themselves up to the top of the rafters, they hear a door open. Over, on a nearby platform, a hooded man stands menacingly."
+                p2.innerHTML = "He begins laughing. He introduces himself as Oliver Bands, and then waits a few seconds, before calmly asking \"Remember me, Michael?\". That's when it hits Mike. Oliver was the kid he used to bully in middle school! He must have baited Mike here using Joe and his Momma as bait! \"You don't have much time left, my friends!\" states Oliver. He explains how the warehouse is going to flood, and there's nothing you two can do about it."
+                p3.innerHTML = "Joe and Mike frantically look around for any ideas that may save them. Joe thinks they could make a raft out of the wood planks in the rafters and sail over, or try to leap across from rafter to rafter until they reach the platform Oliver is on."
+                b1.innerHTML = "Make A Raft"
+                b2.style.display = "Jump Across The Rafters";
+            }
+            function warehouseChoiceTwo(){
+                img.src="images/oliver.jpg";
+                p1.innerHTML = "As Joe and Mike finally lift themselves up to the top of the rafters, they hear a door open. Over, on a nearby platform, a hooded man stands menacingly."
+                p2.innerHTML = "He begins laughing. He introduces himself as Oliver Bands, and then waits a few seconds, before calmly asking \"Remember me, Michael?\". That's when it hits Mike. Oliver was the kid he used to bully in middle school! He must have baited Mike here using Joe and his Momma as bait! \"You don't have much time left, my friends!\" states Oliver. He explains how the warehouse is going to flood, and there's nothing you two can do about it."
+                p3.innerHTML = "Joe and Mike frantically look around for any ideas that may save them. Joe thinks they could make a raft out of the wood planks in the rafters and sail over, or try to leap across from rafter to rafter until they reach the platform Oliver is on."
+                b1.innerHTML = "Make A Raft"
+                b2.innerHTML = "Jump Across The Rafters";
+                b2.style.display = "block"
+            }
+            function raft(){
+                img.src="images/raft.jpg";
+                p1.innerHTML = "Joe and Mike cook up a raft like it's Fortnite."
+                p2.innerHTML = "They hop on and get ready to travel."
+                p3.innerHTML = "They sail across the warehouse sea and reach the platform leading to Oliver's office."
+                b1.innerHTML = "Enter Oliver's Office"
+                b2.style.display = "none"
+            }
+            function jump(){
+                img.src="images/jumpmans.jpg";
+                p1.innerHTML = "Joe and Mike hop across rafter by rafter using these bad boys."
+                p2.innerHTML = "They almost slip a few times, but manage to make it across."
+                p3.innerHTML = "They land on the platform and ready up to enter Oliver's Office."
+                b1.innerHTML = "Enter Oliver's Office"
+                b2.style.display = "none"
+            }
+            function oliverOffice(){
+                img.src="images/key.png";
+                p1.innerHTML = "Joe and Mike storm the office and beat Oliver unconscious with a shovel they found in the warehouse earlier."
+                p2.innerHTML = "They see Momma locked up in a cage across the office. Mike picks the key up off of Oliver."
+                p3.innerHTML = "There is only one thing left to do now."
+                b1.innerHTML = "Free Momma"
+                b2.style.display = "none"
+            }
+            function joeMikeEnding(){
+                img.src="images/bossman.jpg";
+                p1.innerHTML = "Joe cries tears of joy as he hugs Momma. She weeps, apologizing for being baited into this horrible event. She didn't know."
+                p2.innerHTML = "In the end though, everything worked out okay. Mike got a well-deserved promotion for his work, Joe and his Momma finally returned back to Santa Cruz."
+                p3.innerHTML = "The End"
+                b1.innerHTML = "Replay"
+                b2.style.display = "none"
             }
 
             //////State Machine
@@ -237,6 +359,110 @@
                     if (button == 1){
                         drive();
                         state="drive";
+                    }
+                }
+                else if (state == "drive"){
+                    if (button == 1){
+                        goInside();
+                        state="goInside";
+                    }
+                }
+                else if (state == "goInside"){
+                    if (button == 1){
+                        europeanRestaurant();
+                        state="europeanRestaurant";
+                    }
+                    else if (button == 2){
+                        alleyway();
+                        state="alleyway";
+                    }
+                    else if (button == 3){
+                        homeDepot();
+                        state="homeDepot";
+                    }
+                }
+                else if (state == "europeanRestaurant"){
+                    if (button == 1){
+                        goInsideTwo();
+                        state="goInsideTwo";
+                    }
+                }
+                else if (state == "goInsideTwo"){
+                    if (button == 1){
+                        alleyway();
+                        state="alleyway";
+                    }
+                    else if (button == 2){
+                        homeDepot();
+                        state="homeDepot";
+                    }
+                }
+                else if (state == "homeDepot"){
+                    if (button == 1){
+                        warehouseChoiceOne();
+                        state="warehouseChoiceOne";
+                    }
+                }
+                else if (state == "alleyway"){
+                    if (button == 1){
+                        warehouseChoiceOne();
+                        state="warehouseChoiceOne";
+                    }
+                }
+                else if (state == "warehouseChoiceOne"){
+                    if (button == 1){
+                        furniture();
+                        state="furniture";
+                    }
+                    else if (button == 2){
+                        garden();
+                        state="garden";
+                    }
+                }
+                else if (state == "furniture"){
+                    if (button == 1){
+                        warehouseChoiceTwo();
+                        state="warehouseChoiceTwo"
+                    }
+                }
+                else if (state == "garden"){
+                    if (button == 1){
+                        warehouseChoiceOne();
+                        state="warehouseChoiceOne"
+                    }
+                }
+                else if (state == "warehouseChoiceTwo"){
+                    if (button == 1){
+                        raft();
+                        state="raft"
+                    }
+                    else if (button == 2){
+                        jump();
+                        state="jump";
+                    }
+                }
+                else if (state == "raft"){
+                    if (button == 1){
+                        oliverOffice();
+                        state="oliverOffice";
+                    }
+                }
+                else if (state == "jump"){
+                    if (button == 1){
+                        oliverOffice();
+                        state="oliverOffice";
+                    }
+                }
+                else if (state == "oliverOffice"){
+                    if (button == 1){
+                        joeMikeEnding();
+                        state="joeMikeEnding";
+                    }
+                }
+                else if (state == "joeMikeEnding"){
+                    if (button == 1){
+                        intro();
+                        state="intro";
                     }
                 }
             }
