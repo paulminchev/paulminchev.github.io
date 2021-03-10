@@ -47,5 +47,20 @@
     <iframe height="600px" width="100%" src="https://repl.it/@PaulSimonMinche/rsa-project-paulminchev?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 </p>
 
+<p class="smallerheader">
+
+</p>
+
+<p class="smallerheader">
+    The overall purpose of my program is to make a functioning tool to encrypt and decrypt phrases using standard public and private key methods. The functionality of the program is that a user can get any phrase and successfully encrypt it with my program, then later decrypting it with the exact same program, as well as save and reopen messages. The user may input all the necessary values for the keys, as well as a phrase that they would like to have encrypted or decrypted. Then, the program outputs this encrypted or decrypted phrase successfully after the encrypt/decrypt button is clicked by the user.
+</p>
+
+<img src="images/decryptionscreen1.png">
+<img src="images/decryptionscreen2.png">
+<img src="images/decryptionscreen3.png">
+
+<p class="smallerheader">
+    The encrypt function is a core backbone of my program and puts the given text into an encrypted, otherwise undecipherable form, which is a main function in the program. It contributes to the encryption and decryption functionality of the program, meaning you can cover up text and then subsequently decipher it afterwards. Next, here is how the function works. First, the inputted message to encrypt is globally imported into the function. The code prepares the lookup table in order to successfully transfer the message. Then, the message itself is pulled from the textbox in order for the function to be able to look at it. It checks each letter in the message, and locates it in the lookup table if it is already present. If not, it runs a special code to encrypt the letter and place it in the lookup table. The first step of this method is to convert the letter into a numerical value. It then creates an encrypted number by taking the powers of your numerical value, as well as your e and n values. This encrypted number is turned into a character, and is represented by a new encrypted letter, finishing the actual process of encryption. As for the rest, the letter is placed into the lookup table, as it is more efficient to look into the table for further use and find the character instead of re-encrypting it. From there on, the encrypted letter is pasted in instead of the unencrypted one, and so one part of the message is encrypted. This cycle continues until every letter has been encrypted, upon which the encrypted message is pasted back into the textbox to replace the unencrypted one.
+</p>
 </body>
 </html>
