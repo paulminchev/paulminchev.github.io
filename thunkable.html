@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/resume.css">
+</head>
+<body class="background">
+    <ul class="navbar">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="dark.html">About Me</a>
+        <li>
+            <a href="resume.html">Resume</a>
+        </li>
+        <li>
+            <a href="contactme.html">Contact Me</a>
+        </li>
+        <li class="dropdown">
+            <a href="#">Projects</a>
+                <ul class="dropdown-content">
+                    <li>
+                        <a href="textadventure.html">Text Adventure</a>
+                    </li>
+                    <li>
+                        <a href="pythonadventure.html">Python Project</a>
+                    </li>
+                    <li>
+                        <a href="tkinterproject.html">Tkinter Project</a>
+                    </li>
+                    <li>
+                        <a href="decryptionproject.html">Decryption Project</a>
+                    </li>
+                    <li>
+                        <a href="thunkable.html">Thunkable Project</a>
+                    </li>
+                </ul>
+        </li>
+    </ul>
+
+<h1 class="titletext">Thunkable Project</h1>
+
+<a href="https://x.thunkable.com/copy/6b433e7cdac5e241ee642fc23997e785">Thunkable Project Link</a>
+
+<p>
+    <iframe src="https://x.thunkable.com/copy/6b433e7cdac5e241ee642fc23997e785" height="700px" width="100%" title="Thunkable Project"></iframe>
+</p>
+
+<video controls>
+    <source src="images/thunkablecspfinal.mp4"
+            type="video/mp4">
+</video>
+
+<p class="smallerheader">
+    The overall purpose of the program is to simulate a game in which the player taps objects on the screen to see how many he can click in the set amount of time allowed. The player’s goal is to obtain a highscore of how many objects he has clicked in the time allotted.
+</p>
+
+<p class="smallerheader">
+    The program’s functionality is that it is capable of effectively running a fully intact game. When the app launches, a title screen with a play button and about button is present. The about page provides the user’s high score, as well as information on how to play the game. When starting a game, it is evident that it works as intended, as tapping the objects on the screen raises the score, and the timer counts efficiently until zero, when the game is ended and the high score is displayed. Finally, a second game is tested where the score isn’t the user’s highest score, and it is demonstrated how the user’s highest score obtained stays put. The input is the user clicking on the screen during the game. The output is the object that they clicked on’s disappearance, and the score raising to signify the object has been counted towards the score, as is evident many times in the video.
+</p>
+
+<img src="images/storage1.png">
+<img src="images/storage2.png">
+
+<p class="smallerheader">
+    The name of the list is Local_Storage1. The data contained in the list represents the user’s high score throughout the games that they have played so far.
+</p>
+
+<p class="smallerheader">
+    The list retains information about the user’s high score that would otherwise be wiped every time the game was restarted. By saving this overall high score to a local storage value, it ensures that it will stay in place after restarting the game. The code would not work without this local storage, as the user’s true high score would not be saved, instead being wiped every time the game restarts along with the rest of the variables.
+</p>
+</body>
+</html>
